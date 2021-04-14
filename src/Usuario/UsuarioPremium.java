@@ -1,6 +1,6 @@
 package Usuario;
 
-public class UsuarioPremiun extends Usuario{
+public class UsuarioPremium extends Usuario{
     private double mensalidade;
     private String venciento;
 
@@ -9,7 +9,7 @@ public class UsuarioPremiun extends Usuario{
 
 
     /////////////// Constructor //////////////////
-    public UsuarioPremiun(String nome, String dtNascimento, double mensalidade, String venciento) {
+    public UsuarioPremium(String nome, String dtNascimento, double mensalidade, String venciento) {
         super(nome, dtNascimento);
         this.mensalidade = mensalidade;
         this.venciento = venciento;

@@ -1,15 +1,15 @@
 package Cobranca;
 
-import Usuario.UsuarioPremiun;
+import Usuario.UsuarioPremium;
 
 public class Cobranca {
     private String valor;
-    private UsuarioPremiun usuarioPremiun;
+    private UsuarioPremium usuarioPremium;
 
     /////////////// Constructor //////////////////
-    public Cobranca(String valor, UsuarioPremiun usuarioPremiun) {
+    public Cobranca(String valor, UsuarioPremium usuarioPremium) {
         this.valor = valor;
-        this.usuarioPremiun = usuarioPremiun;
+        this.usuarioPremium = usuarioPremium;
     }
 
     /////////////// setters  && getters //////////////////

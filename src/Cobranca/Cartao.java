@@ -1,6 +1,6 @@
 package Cobranca;
 
-import Usuario.UsuarioPremiun;
+import Usuario.UsuarioPremium;
 
 public class Cartao extends Cobranca{
     private String numeroCartao;
@@ -11,8 +11,8 @@ public class Cartao extends Cobranca{
 
 
     /////////////// Constructor //////////////////
-    public Cartao(String valor, UsuarioPremiun usuarioPremiun, String numeroCartao, String cvv, String numero, String nome, String validade) {
-        super(valor, usuarioPremiun);
+    public Cartao(String valor, UsuarioPremium usuarioPremium, String numeroCartao, String cvv, String numero, String nome, String validade) {
+        super(valor, usuarioPremium);
         this.numeroCartao = numeroCartao;
         this.cvv = cvv;
         this.numero = numero;

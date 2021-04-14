@@ -5,10 +5,11 @@ public class Conjunto {
     private String descricao;
     private String UrlConjunto;
     private String UrlImagem;
+    private String listaDeConteudo;
 
 
     /////////////// Constructor //////////////////
-    public Conjunto(String nome, String descricao, String urlConjunto, String urlImagem) {
+    public Conjunto(String nome, String descricao, String urlConjunto, String urlImagem, String listaDeConteudo) {
         this.nome = nome;
         this.descricao = descricao;
         UrlConjunto = urlConjunto;

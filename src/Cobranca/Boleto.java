@@ -1,6 +1,6 @@
 package Cobranca;
 
-import Usuario.UsuarioPremiun;
+import Usuario.UsuarioPremium;
 
 public class Boleto extends Cobranca{
     private String numeroBoleto;
@@ -10,8 +10,8 @@ public class Boleto extends Cobranca{
 
 
     /////////////// Constructor //////////////////
-    public Boleto(String valor, UsuarioPremiun usuarioPremiun, String numeroBoleto, String validadeBoleto, String prazoCairBoleto, String valorDocumento) {
-        super(valor, usuarioPremiun);
+    public Boleto(String valor, UsuarioPremium usuarioPremium, String numeroBoleto, String validadeBoleto, String prazoCairBoleto, String valorDocumento) {
+        super(valor, usuarioPremium);
         this.numeroBoleto = numeroBoleto;
         this.validadeBoleto = validadeBoleto;
         this.prazoCairBoleto = prazoCairBoleto;
