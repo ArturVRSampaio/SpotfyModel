@@ -1,29 +1,26 @@
 package Main;
-    import Usuario.Usuario;
     import Usuario.UsuarioFree;
-    import Usuario.UsuarioPremiun;
+    import Usuario.UsuarioPremium;
 
-    import Criador.Criador;
     import Criador.Artista;
     import Criador.Banda;
     import Criador.PodCaster;
 
-    import Conjunto.Conjunto;
     import Conjunto.Album;
     import Conjunto.Playlist;
     import Conjunto.Temporada;
 
-    import Conteudo.Conteudo;
     import Conteudo.Musica;
     import Conteudo.Podcast;
 
-    import Cobranca.Cobranca;
     import Cobranca.Cartao;
     import Cobranca.Boleto;
 
 
 public class Main {
     public static void main (String[] args) {
+
+
         // criando users
         String nome ="user1";
         String dtNascimento ="1234";
@@ -33,13 +30,14 @@ public class Main {
         dtNascimento ="1234";
         double mensalidade =1234;
         String vencimento ="1234";
-        UsuarioPremiun usuariopre1 = new UsuarioPremiun(nome, dtNascimento, mensalidade, vencimento);
+        UsuarioPremium usuariopre1 = new UsuarioPremium(nome, dtNascimento, mensalidade, vencimento);
 
         nome ="userpre2";
         dtNascimento ="1234";
         mensalidade =1234;
         vencimento ="1234";
-        UsuarioPremiun usuariopre2 = new UsuarioPremiun(nome, dtNascimento, mensalidade, vencimento);
+        UsuarioPremium usuariopre2 = new UsuarioPremium(nome, dtNascimento, mensalidade, vencimento);
+
 
         //criadores de conteudo
         nome ="podcaster1";
