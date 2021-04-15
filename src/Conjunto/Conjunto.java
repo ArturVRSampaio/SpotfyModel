@@ -9,7 +9,7 @@ public class Conjunto {
 
 
     /////////////// Constructor //////////////////
-    public Conjunto(String nome, String descricao, String urlConjunto, String urlImagem, String listaDeConteudo) {
+    public Conjunto(String nome, String descricao, String urlConjunto, String urlImagem) {
         this.nome = nome;
         this.descricao = descricao;
         UrlConjunto = urlConjunto;
