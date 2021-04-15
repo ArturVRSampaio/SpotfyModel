@@ -7,8 +7,6 @@ public class Avaliacao {
     private boolean avaliacao;
 
 
-
-    // avalicacao de criador
     public Avaliacao(Usuario usuario, boolean avaliacao) {
         this.usuario = usuario;
         this.avaliacao= avaliacao;
