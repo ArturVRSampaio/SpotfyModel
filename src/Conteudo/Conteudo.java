@@ -5,11 +5,12 @@ import java.util.List;
 
 import Avaliacao.Avaliacao;
 
-public class Conteudo {
+public abstract class Conteudo {
     private String nome;
     private Calendar DtCriacao;
     private String UrlImagem;
     private List<Avaliacao> listaAvaliacao;
+    private int totalView;
 
 
     public Conteudo(String nome, Calendar dtCriacao, String urlImagem) {
@@ -18,12 +19,22 @@ public class Conteudo {
         UrlImagem = urlImagem;
     }
 
+    public abstract void exibir();
+
     public String getNome() {
         return nome;
     }
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public int getTotalView() {
+        return totalView;
+    }
+
+    public void addTotalView() {
+        this.totalView +=1;
     }
 
     public Calendar getDtCriacao() {

@@ -18,6 +18,9 @@ public class Podcast extends Conteudo{
         Descricao = descricao;
     }
 
+    public void exibir() {
+        this.addTotalView();
+    }
 
     public PodCaster getPodCaster() {
         return podCaster;

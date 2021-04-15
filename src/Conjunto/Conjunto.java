@@ -4,7 +4,7 @@ import Avaliacao.Avaliacao;
 
 import java.util.List;
 
-public class Conjunto {
+public abstract class Conjunto {
     private String nome;
     private String descricao;
     private String UrlImagem;
