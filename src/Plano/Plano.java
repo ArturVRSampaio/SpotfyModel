@@ -1,7 +1,5 @@
 package Plano;
 
-import Cobranca.Cobranca;
-
 public class Plano{
     private String nomePlano;
     private double valorPlano;
@@ -27,13 +25,5 @@ public class Plano{
 
     public void setValorPlano(double valorPlano) {
         this.valorPlano = valorPlano;
-    }
-
-    public int getDiaVencimento() {
-        return diaVencimento;
-    }
-
-    public void setDiaVencimento(int diaVencimento) {
-        this.diaVencimento = diaVencimento;
     }
 }
