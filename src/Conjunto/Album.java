@@ -1,14 +1,17 @@
 package Conjunto;
 
+import Conteudo.Musica;
 import Criador.Banda;
+
+import java.util.List;
 
 public class Album extends Conjunto{
     private Banda banda;
-
+    private List<Musica> listaMusica;
 
     /////////////// Constructor //////////////////
-    public Album(String nome, String descricao, String urlConjunto, String urlImagem, Banda banda) {
-        super(nome, descricao, urlConjunto, urlImagem);
+    public Album(String nome, String descricao, String urlConjunto, String urlImagem, String listaDeConteudo, Banda banda) {
+        super(nome, descricao, urlConjunto, urlImagem, listaDeConteudo);
         this.banda = banda;
     }
 
