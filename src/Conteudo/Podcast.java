@@ -1,7 +1,10 @@
 package Conteudo;
 
+import Avaliacao.Avaliacao;
+import Avaliacao.AvaliacaoPodcast;
 import Conjunto.Temporada;
 import Criador.PodCaster;
+import Usuario.Usuario;
 
 import java.util.Calendar;
 import java.util.List;
@@ -19,6 +22,12 @@ public class Podcast extends Conteudo{
     }
 
 
+
+    public Avaliacao avalia(Usuario usuario, boolean gostou) {
+        Avaliacao avaliacao = new AvaliacaoPodcast(usuario, gostou, this);
+        return avaliacao;
+    }
+    
     public PodCaster getPodCaster() {
         return podCaster;
     }

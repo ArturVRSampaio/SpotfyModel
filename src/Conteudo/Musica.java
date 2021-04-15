@@ -4,9 +4,13 @@ import Conjunto.Album;
 import Conjunto.Playlist;
 import Criador.Artista;
 import Criador.Banda;
+import Usuario.Usuario;
 
 import java.util.Calendar;
 import java.util.List;
+
+import Avaliacao.Avaliacao;
+import Avaliacao.AvaliacaoMusica;
 
 public class Musica extends Conteudo{
     private Banda Banda;
@@ -27,6 +31,12 @@ public class Musica extends Conteudo{
         this.listaArtista = listaArtista;
     }
 
+
+
+    public Avaliacao avalia(Usuario usuario, boolean gostou) {
+        Avaliacao avaliacao = new AvaliacaoMusica(usuario, gostou, this);
+        return avaliacao;
+    }
 
     public Banda getBanda() {
         return Banda;
