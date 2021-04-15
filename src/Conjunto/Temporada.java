@@ -11,9 +11,8 @@ public class Temporada extends Conjunto{
     private List<Podcast> listaPodcast;
 
 
-    /////////////// Constructor //////////////////
     public Temporada(String nome, String descricao, String urlConjunto, String urlImagem, String listaDeConteudo, PodCaster podCaster) {
-        super(nome, descricao, urlConjunto, urlImagem, listaDeConteudo);
+        super(nome, descricao, urlImagem, listaDeConteudo);
         this.podCaster = podCaster;
     }
 
@@ -21,12 +20,4 @@ public class Temporada extends Conjunto{
         this.listaPodcast.add(podcast);
     }
 
-    /////////////// setters  && getters //////////////////
-    public PodCaster getPodCaster() {
-        return podCaster;
-    }
-
-    public void setPodCaster(PodCaster podCaster) {
-        this.podCaster = podCaster;
-    }
 }

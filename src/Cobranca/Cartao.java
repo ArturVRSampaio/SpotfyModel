@@ -10,7 +10,6 @@ public class Cartao extends Cobranca{
     private String validade;
 
 
-    /////////////// Constructor //////////////////
     public Cartao(double valor, UsuarioPremium usuarioPremium, String numeroCartao, String cvv, String numero, String nome, String validade) {
         super(valor, usuarioPremium);
         this.numeroCartao = numeroCartao;
@@ -18,23 +17,6 @@ public class Cartao extends Cobranca{
         this.numero = numero;
         this.nome = nome;
         this.validade = validade;
-    }
-
-    /////////////// setters  && getters //////////////////
-    public String getNumeroCartao() {
-        return numeroCartao;
-    }
-
-    public String getNumero() {
-        return numero;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public String getValidade() {
-        return validade;
     }
 
 }

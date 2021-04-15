@@ -11,7 +11,7 @@ public class Playlist extends Conjunto{
 
     /////////////// Constructor //////////////////
     public Playlist(String nome, String descricao, String urlConjunto, String urlImagem, String listaDeConteudo, Usuario usuario) {
-        super(nome, descricao, urlConjunto, urlImagem, listaDeConteudo);
+        super(nome, descricao, urlImagem, listaDeConteudo);
         this.usuario = usuario;
     }
 
@@ -19,14 +19,4 @@ public class Playlist extends Conjunto{
         this.listaMusica.add(musica);
     }
 
-
-
-    /////////////// setters  && getters //////////////////
-    public Usuario getUsuario() {
-        return usuario;
-    }
-
-    public void setUsuario(Usuario usuario) {
-        this.usuario = usuario;
-    }
 }

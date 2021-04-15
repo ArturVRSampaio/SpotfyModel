@@ -1,4 +1,4 @@
-package Avaliaca;
+package Avaliacao;
 
 import Conjunto.Conjunto;
 import Conteudo.Conteudo;
