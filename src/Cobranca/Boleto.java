@@ -10,7 +10,7 @@ public class Boleto extends Cobranca{
 
 
     /////////////// Constructor //////////////////
-    public Boleto(String valor, UsuarioPremium usuarioPremium, String numeroBoleto, String validadeBoleto, String prazoCairBoleto, String valorDocumento) {
+    public Boleto(double valor, UsuarioPremium usuarioPremium, String numeroBoleto, String validadeBoleto, String prazoCairBoleto, String valorDocumento) {
         super(valor, usuarioPremium);
         this.numeroBoleto = numeroBoleto;
         this.validadeBoleto = validadeBoleto;

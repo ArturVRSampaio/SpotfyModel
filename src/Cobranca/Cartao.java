@@ -11,7 +11,7 @@ public class Cartao extends Cobranca{
 
 
     /////////////// Constructor //////////////////
-    public Cartao(String valor, UsuarioPremium usuarioPremium, String numeroCartao, String cvv, String numero, String nome, String validade) {
+    public Cartao(double valor, UsuarioPremium usuarioPremium, String numeroCartao, String cvv, String numero, String nome, String validade) {
         super(valor, usuarioPremium);
         this.numeroCartao = numeroCartao;
         this.cvv = cvv;

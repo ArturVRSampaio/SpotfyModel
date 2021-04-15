@@ -3,17 +3,17 @@ package Cobranca;
 import Usuario.UsuarioPremium;
 
 public class Cobranca {
-    private String valor;
+    private double valor;
     private UsuarioPremium usuarioPremium;
 
     /////////////// Constructor //////////////////
-    public Cobranca(String valor, UsuarioPremium usuarioPremium) {
+    public Cobranca(double valor, UsuarioPremium usuarioPremium) {
         this.valor = valor;
         this.usuarioPremium = usuarioPremium;
     }
 
     /////////////// setters  && getters //////////////////
-    public String getValor() {
+    public double getValor() {
         return valor;
     }
 
