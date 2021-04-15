@@ -1,6 +1,6 @@
 package Cobranca;
 
-import Usuario.UsuarioPremium;
+import Usuario.Usuario;
 
 public class Boleto extends Cobranca{
     private String numeroBoleto;
@@ -9,8 +9,8 @@ public class Boleto extends Cobranca{
     private String valorDocumento;
 
 
-    public Boleto(double valor, UsuarioPremium usuarioPremium, String numeroBoleto, String validadeBoleto, String prazoCairBoleto, String valorDocumento) {
-        super(valor, usuarioPremium);
+    public Boleto(double valor, Usuario usuario, String numeroBoleto, String validadeBoleto, String prazoCairBoleto, String valorDocumento) {
+        super(valor, usuario);
         this.numeroBoleto = numeroBoleto;
         this.validadeBoleto = validadeBoleto;
         this.prazoCairBoleto = prazoCairBoleto;

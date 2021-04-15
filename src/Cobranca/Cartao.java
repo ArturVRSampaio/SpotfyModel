@@ -1,6 +1,6 @@
 package Cobranca;
 
-import Usuario.UsuarioPremium;
+import Usuario.Usuario;
 
 public class Cartao extends Cobranca{
     private String numeroCartao;
@@ -10,8 +10,8 @@ public class Cartao extends Cobranca{
     private String validade;
 
 
-    public Cartao(double valor, UsuarioPremium usuarioPremium, String numeroCartao, String cvv, String numero, String nome, String validade) {
-        super(valor, usuarioPremium);
+    public Cartao(double valor, Usuario usuario, String numeroCartao, String cvv, String numero, String nome, String validade) {
+        super(valor, usuario);
         this.numeroCartao = numeroCartao;
         this.cvv = cvv;
         this.numero = numero;
