@@ -1,8 +1,8 @@
-package Cobranca;
+package MetodoPagamento;
 
 import Usuario.Usuario;
 
-public class Boleto extends Cobranca{
+public class Boleto extends MetodoPagamento{
     private String numeroBoleto;
     private String validadeBoleto;
     private String prazoCairBoleto;

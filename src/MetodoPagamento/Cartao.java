@@ -1,8 +1,8 @@
-package Cobranca;
+package MetodoPagamento;
 
 import Usuario.Usuario;
 
-public class Cartao extends Cobranca{
+public class Cartao extends MetodoPagamento{
     private String numeroCartao;
     private String cvv;
     private String numero;
