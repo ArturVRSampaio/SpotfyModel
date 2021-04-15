@@ -2,7 +2,7 @@ package Avaliacao;
 
 import Usuario.Usuario;
 
-public class Avaliacao {
+public abstract class Avaliacao {
     private Usuario usuario;
     private boolean avaliacao;
 
