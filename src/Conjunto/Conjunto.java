@@ -1,5 +1,6 @@
 package Conjunto;
 
+import Avaliacao.Avaliacao;
 import Conteudo.Conteudo;
 import Criador.Artista;
 
@@ -11,6 +12,7 @@ public class Conjunto {
     private String UrlConjunto;
     private String UrlImagem;
     private List<Conteudo> listaConteudo;
+    private List<Avaliacao> listaAvaliacao;
 
 
     public Conjunto(String nome, String descricao, String urlConjunto, String urlImagem) {

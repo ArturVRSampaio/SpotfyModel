@@ -7,7 +7,7 @@ import Criador.PodCaster;
 import java.util.List;
 
 public class Temporada extends Conjunto{
-    PodCaster podCaster;
+    private PodCaster podCaster;
     private List<Podcast> listaPodcast;
 
 

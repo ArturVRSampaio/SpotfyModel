@@ -13,7 +13,6 @@ public class Artista  extends Criador{
 
 
 
-
     public Artista(String nome, String urlImagem, String dtNascimento) {
         super(nome, urlImagem);
         DtNascimento = dtNascimento;
