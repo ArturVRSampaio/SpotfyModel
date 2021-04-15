@@ -1,36 +1,18 @@
 package Main;
-    import Usuario.Usuario;
-
-    import Plano.Plano;
-
-    import Criador.Criador;
-    import Criador.Artista;
-    import Criador.Banda;
-    import Criador.PodCaster;
-
-    import Conteudo.Conteudo;
-    import Conteudo.Musica;
-    import Conteudo.Podcast;
-
-    import Conjunto.Conjunto;
-    import Conjunto.Album;
-    import Conjunto.Playlist;
-    import Conjunto.Temporada;
-
     import Cobranca.Cobranca;
-    import Cobranca.Cartao;
-    import Cobranca.Boleto;
+import Conjunto.Album;
+import Conjunto.Playlist;
+import Conteudo.Conteudo;
+import Conteudo.Musica;
+import Criador.Artista;
+import Criador.Banda;
+import Pagamento.Pagamento;
+import Plano.Plano;
+import Usuario.Usuario;
 
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
-
-import Avaliacao.Avaliacao;
-import Avaliacao.AvaliacaoAlbum;
-import Avaliacao.AvaliacaoArtista;
-import Avaliacao.AvaliacaoMusica;
-import Avaliacao.AvaliacaoPlaylist;
-import Pagamento.Pagamento;
 
 
 public class Main {
@@ -64,15 +46,16 @@ public class Main {
 
         Album paranoid = new Album("paranoid", "", "urlImagem.com", sabbath, integrantesSabbath);
 
-        Musica ironMan = new Musica("iron man", Calendar.getInstance(), "ironMan.com", paranoid, integrantesSabbath);
+        Conteudo ironMan = new Musica("iron man", Calendar.getInstance(), "ironMan.com", paranoid, integrantesSabbath);
 
         Playlist playlistRock = new Playlist("minhas favoritas", "Definitivamente escute", "escutandoMusicaBoa.jpg", user1); 
 
         //avaliando
         //AvaliacaoMusica avMus = new AvaliacaoMusica(user1, true, musica1);
-
-        user1.avalia(ironMan, true)
-
+        
+        ironMan.exibe();
+        ironMan.avalia(user1, true);
+        
 
         
         
