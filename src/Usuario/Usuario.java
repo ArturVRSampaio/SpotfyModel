@@ -1,8 +1,11 @@
 package Usuario;
 
 import Avaliacao.Avaliacao;
+import Conjunto.Conjunto;
 import Conjunto.Playlist;
 import Conteudo.Conteudo;
+import Conteudo.Musica;
+import Criador.Criador;
 import Plano.Plano;
 
 import java.util.Calendar;
@@ -14,6 +17,7 @@ public class Usuario {
     private Plano plano;
     private List<Avaliacao> listaAvaliacao;
     private List<Playlist> listaPlaylist;
+    private List<Musica> listaMusicasGostei;
 
 
     public Usuario(String nome, Calendar dtNascimento, Plano plano) {
@@ -26,6 +30,18 @@ public class Usuario {
     public void avalia(boolean gostou, Conteudo conteudo){
         conteudo.avalia(this, gostou);
     }
+
+    /// terminar de implementar
+    //public void avalia(boolean gostou, Conjunto conjunto){
+    //    conjunto.avalia(this, gostou);
+    //}
+//
+    //public void avalia(boolean gostou, Criador criador){
+    //    criador.avalia(this, gostou);
+    //}
+
+
+
 
 
     public String getNome() {
@@ -72,8 +88,21 @@ public class Usuario {
         this.listaPlaylist.add(playlist);
     }
 
-
+    
     public void setListaPlaylist(List<Playlist> listaPlaylist) {
         this.listaPlaylist = listaPlaylist;
     }
+
+    public void setListaMusicasGostei(List<Musica> listaMusicasGostei) {
+        this.listaMusicasGostei = listaMusicasGostei;
+    }
+
+    public List<Musica> getListaMusicasGostei() {
+        return listaMusicasGostei;
+    }
+
+    public void addListaMusicasGostei (Musica musica) {
+        this.listaMusicasGostei.add(musica);
+    }
+
 }
