@@ -38,19 +38,19 @@ public class Usuario {
         this.dtNascimento = dtNascimento;
     }
 
-    public Plano.Plano getPlano() {
+    public Plano getPlano() {
         return plano;
     }
 
-    public void setPlano(Plano.Plano plano) {
+    public void setPlano(Plano plano) {
         this.plano = plano;
     }
 
-    public List<Avaliacao.Avaliacao> getListaAvaliacao() {
+    public List<Avaliacao> getListaAvaliacao() {
         return listaAvaliacao;
     }
 
-    public void setListaAvaliacao(List<Avaliacao.Avaliacao> listaAvaliacao) {
+    public void setListaAvaliacao(List<Avaliacao> listaAvaliacao) {
         this.listaAvaliacao = listaAvaliacao;
     }
 

@@ -34,11 +34,11 @@ public class Criador {
         UrlImagem = urlImagem;
     }
 
-    public List<Avaliacao.Avaliacao> getListaAvaiacao() {
+    public List<Avaliacao> getListaAvaiacao() {
         return listaAvaiacao;
     }
 
-    public void setListaAvaiacao(List<Avaliacao.Avaliacao> listaAvaiacao) {
+    public void setListaAvaiacao(List<Avaliacao> listaAvaiacao) {
         this.listaAvaiacao = listaAvaiacao;
     }
 }

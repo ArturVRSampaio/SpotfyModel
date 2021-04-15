@@ -28,11 +28,11 @@ public class Banda  extends Criador{
         DtCriacao = dtCriacao;
     }
 
-    public List<Criador.Artista> getListaArtista() {
+    public List<Artista> getListaArtista() {
         return listaArtista;
     }
 
-    public void setListaArtista(List<Criador.Artista> listaArtista) {
+    public void setListaArtista(List<Artista> listaArtista) {
         this.listaArtista = listaArtista;
     }
 

@@ -28,11 +28,11 @@ public class Artista  extends Criador{
         DtNascimento = dtNascimento;
     }
 
-    public Criador.Banda getBanda() {
+    public Banda getBanda() {
         return banda;
     }
 
-    public void setBanda(Criador.Banda banda) {
+    public void setBanda(Banda banda) {
         this.banda = banda;
     }
 
