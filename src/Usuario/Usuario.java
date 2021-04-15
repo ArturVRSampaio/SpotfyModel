@@ -32,13 +32,13 @@ public class Usuario {
     }
 
     /// terminar de implementar
-    //public void avalia(boolean gostou, Conjunto conjunto){
-    //    conjunto.avalia(this, gostou);
-    //}
-//
-    //public void avalia(boolean gostou, Criador criador){
-    //    criador.avalia(this, gostou);
-    //}
+    public void avalia(boolean gostou, Conjunto conjunto){
+        conjunto.avalia(this, gostou);
+    }
+
+    public void avalia(boolean gostou, Criador criador){
+        criador.avalia(this, gostou);
+    }
 
 
 
