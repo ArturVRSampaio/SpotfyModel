@@ -1,7 +1,6 @@
 package Conteudo;
 
 import Avaliacao.Avaliacao;
-import Avaliacao.AvaliacaoMusica;
 import Usuario.Usuario;
 
 import java.util.Calendar;
