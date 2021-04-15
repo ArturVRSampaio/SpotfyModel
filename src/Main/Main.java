@@ -54,29 +54,24 @@ public class Main {
         Pagamento pag2 = new Pagamento(cobranca2, Calendar.getInstance(), 0);
 
         
-        Artista artista1 = new Artista("ozzy", "ozzy.com", Calendar.getInstance());
-        Artista artista2 = new Artista("iommy", "iommy.com", Calendar.getInstance());
-        Banda banda1 = new Banda("blackSabbath", "sabbath.com", Calendar.getInstance());
+        Artista ozzy = new Artista("ozzy", "ozzy.com", Calendar.getInstance());
+        Artista iommy = new Artista("iommy", "iommy.com", Calendar.getInstance());
+        Banda sabbath = new Banda("blackSabbath", "sabbath.com", Calendar.getInstance());
         
         List<Artista> integrantesSabbath = new ArrayList<Artista>();
-        integrantesSabbath.add(artista1);
-        integrantesSabbath.add(artista2);
+        integrantesSabbath.add(ozzy);
+        integrantesSabbath.add(iommy);
 
-        Album album1 = new Album("paranoid", "", "urlImagem.com", banda1, integrantesSabbath);
+        Album paranoid = new Album("paranoid", "", "urlImagem.com", sabbath, integrantesSabbath);
 
-        Musica musica1 = new Musica("iron man", Calendar.getInstance(), "ironMan.com", album1, integrantesSabbath);
+        Musica ironMan = new Musica("iron man", Calendar.getInstance(), "ironMan.com", paranoid, integrantesSabbath);
 
-        Playlist playlist1 = new Playlist("minhas favoritas", "Definitivamente escute", "escutandoMusicaBoa.jpg", user1); 
+        Playlist playlistRock = new Playlist("minhas favoritas", "Definitivamente escute", "escutandoMusicaBoa.jpg", user1); 
 
         //avaliando
-        AvaliacaoMusica avMus = new AvaliacaoMusica(user1, true, musica1);
+        //AvaliacaoMusica avMus = new AvaliacaoMusica(user1, true, musica1);
 
-        AvaliacaoPlaylist avPlay = new AvaliacaoPlaylist(user1, true, playlist1);
-
-        AvaliacaoArtista avArt = new AvaliacaoArtista(user1, true, artista1);
-
-        AvaliacaoAlbum avAlb = new AvaliacaoAlbum(user1, true, album1);
-
+        user1.avalia(ironMan, true)
 
 
         
