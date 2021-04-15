@@ -32,8 +32,17 @@ public class Banda  extends Criador{
         return listaArtista;
     }
 
+    public void addlistaArtista(Artista artista) {
+        this.listaArtista.add(artista);
+    }
+
     public void setListaArtista(List<Artista> listaArtista) {
         this.listaArtista = listaArtista;
+    }
+
+
+    public void addlistaAlbum (Album album) {
+        this.listaAlbum.add(album);
     }
 
     public List<Album> getListaAlbum() {

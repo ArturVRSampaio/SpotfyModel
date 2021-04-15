@@ -1,11 +1,15 @@
 package Conteudo;
 
 import java.util.Calendar;
+import java.util.List;
+
+import Avaliacao.Avaliacao;
 
 public class Conteudo {
     private String nome;
     private Calendar DtCriacao;
     private String UrlImagem;
+    private List<Avaliacao> listaAvaliacao;
 
 
     public Conteudo(String nome, Calendar dtCriacao, String urlImagem) {
@@ -37,4 +41,18 @@ public class Conteudo {
     public void setUrlImagem(String urlImagem) {
         UrlImagem = urlImagem;
     }
+
+
+    public List<Avaliacao> getListaAvaiacao() {
+        return listaAvaliacao;
+    }
+
+    public void addlistaAvaliacao (Avaliacao avaliacao) {
+        this.listaAvaliacao.add(avaliacao);
+    }
+
+    public void setListaAvaiacao(List<Avaliacao> listaAvaiacao) {
+        this.listaAvaliacao = listaAvaiacao;
+    }
+    
 }

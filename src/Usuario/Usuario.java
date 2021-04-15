@@ -54,9 +54,18 @@ public class Usuario {
         this.listaAvaliacao = listaAvaliacao;
     }
 
+    public void addlistaAvaliacao (Avaliacao avaliacao) {
+        this.listaAvaliacao.add(avaliacao);
+    }
+
     public List<Playlist> getListaPlaylist() {
         return listaPlaylist;
     }
+
+    public void addListaPlaylist (Playlist playlist) {
+        this.listaPlaylist.add(playlist);
+    }
+
 
     public void setListaPlaylist(List<Playlist> listaPlaylist) {
         this.listaPlaylist = listaPlaylist;

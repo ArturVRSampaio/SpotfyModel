@@ -28,6 +28,10 @@ public class PodCaster extends Criador{
         return listaTemporada;
     }
 
+    public void addlistaAvaliacao (Temporada temporada) {
+        this.listaTemporada.add(temporada);
+    }
+
     public void setListaTemporada(List<Temporada> listaTemporada) {
         this.listaTemporada = listaTemporada;
     }

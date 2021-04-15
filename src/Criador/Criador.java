@@ -38,6 +38,10 @@ public class Criador {
         return listaAvaiacao;
     }
 
+    public void addlistaAvaliacao (Avaliacao avaliacao) {
+        this.listaAvaiacao.add(avaliacao);
+    }
+
     public void setListaAvaiacao(List<Avaliacao> listaAvaiacao) {
         this.listaAvaiacao = listaAvaiacao;
     }

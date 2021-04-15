@@ -40,11 +40,15 @@ public class Conjunto {
         UrlImagem = urlImagem;
     }
 
-    public List<Avaliacao> getListaAvaliacao() {
+    public List<Avaliacao> getListaAvaiacao() {
         return listaAvaliacao;
     }
 
-    public void setListaAvaliacao(List<Avaliacao> listaAvaliacao) {
-        this.listaAvaliacao = listaAvaliacao;
+    public void addlistaAvaliacao (Avaliacao avaliacao) {
+        this.listaAvaliacao.add(avaliacao);
+    }
+
+    public void setListaAvaiacao(List<Avaliacao> listaAvaiacao) {
+        this.listaAvaliacao = listaAvaiacao;
     }
 }
