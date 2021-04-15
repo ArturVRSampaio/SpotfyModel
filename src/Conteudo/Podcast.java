@@ -17,4 +17,29 @@ public class Podcast extends Conteudo{
         this.listaTemporada = listaTemporada;
         Descricao = descricao;
     }
+
+
+    public PodCaster getPodCaster() {
+        return podCaster;
+    }
+
+    public void setPodCaster(PodCaster podCaster) {
+        this.podCaster = podCaster;
+    }
+
+    public List<Temporada> getListaTemporada() {
+        return listaTemporada;
+    }
+
+    public void setListaTemporada(List<Temporada> listaTemporada) {
+        this.listaTemporada = listaTemporada;
+    }
+
+    public String getDescricao() {
+        return Descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        Descricao = descricao;
+    }
 }

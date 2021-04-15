@@ -8,6 +8,9 @@ import Usuario.Usuario;
 public class Avaliacao {
     private Usuario usuario;
     private boolean avaliacao;
+    private Conteudo Conteudo;
+    private Conjunto Conjunto;
+    private Criador Criador;
 
 
 //constructors
@@ -29,4 +32,43 @@ public class Avaliacao {
         this.avaliacao= avaliacao;
     }
 
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+    }
+
+    public boolean isAvaliacao() {
+        return avaliacao;
+    }
+
+    public void setAvaliacao(boolean avaliacao) {
+        this.avaliacao = avaliacao;
+    }
+
+    public Conteudo getConteudo() {
+        return Conteudo;
+    }
+
+    public void setConteudo(Conteudo conteudo) {
+        Conteudo = conteudo;
+    }
+
+    public Conjunto getConjunto() {
+        return Conjunto;
+    }
+
+    public void setConjunto(Conjunto conjunto) {
+        Conjunto = conjunto;
+    }
+
+    public Criador getCriador() {
+        return Criador;
+    }
+
+    public void setCriador(Criador criador) {
+        Criador = criador;
+    }
 }

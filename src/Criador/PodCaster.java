@@ -16,4 +16,19 @@ public class PodCaster extends Criador{
         DtCriacao = dtCriacao;
     }
 
+    public Calendar getDtCriacao() {
+        return DtCriacao;
+    }
+
+    public void setDtCriacao(Calendar dtCriacao) {
+        DtCriacao = dtCriacao;
+    }
+
+    public List<Temporada> getListaTemporada() {
+        return listaTemporada;
+    }
+
+    public void setListaTemporada(List<Temporada> listaTemporada) {
+        this.listaTemporada = listaTemporada;
+    }
 }

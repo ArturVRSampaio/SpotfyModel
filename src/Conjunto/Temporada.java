@@ -19,4 +19,19 @@ public class Temporada extends Conjunto{
         this.listaPodcast.add(podcast);
     }
 
+    public PodCaster getPodCaster() {
+        return podCaster;
+    }
+
+    public void setPodCaster(PodCaster podCaster) {
+        this.podCaster = podCaster;
+    }
+
+    public List<Podcast> getListaPodcast() {
+        return listaPodcast;
+    }
+
+    public void setListaPodcast(List<Podcast> listaPodcast) {
+        this.listaPodcast = listaPodcast;
+    }
 }

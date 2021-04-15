@@ -13,4 +13,27 @@ public class Cobranca {
         this.usuarioPremium = usuarioPremium;
     }
 
+    public double getValor() {
+        return valor;
+    }
+
+    public void setValor(double valor) {
+        this.valor = valor;
+    }
+
+    public UsuarioPremium getUsuarioPremium() {
+        return usuarioPremium;
+    }
+
+    public void setUsuarioPremium(UsuarioPremium usuarioPremium) {
+        this.usuarioPremium = usuarioPremium;
+    }
+
+    public Pagamento getPagamento() {
+        return pagamento;
+    }
+
+    public void setPagamento(Pagamento pagamento) {
+        this.pagamento = pagamento;
+    }
 }

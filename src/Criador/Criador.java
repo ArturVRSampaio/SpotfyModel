@@ -16,4 +16,29 @@ public class Criador {
         this.nome = nome;
         UrlImagem = urlImagem;
     }
+
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getUrlImagem() {
+        return UrlImagem;
+    }
+
+    public void setUrlImagem(String urlImagem) {
+        UrlImagem = urlImagem;
+    }
+
+    public List<Avaliacao.Avaliacao> getListaAvaiacao() {
+        return listaAvaiacao;
+    }
+
+    public void setListaAvaiacao(List<Avaliacao.Avaliacao> listaAvaiacao) {
+        this.listaAvaiacao = listaAvaiacao;
+    }
 }

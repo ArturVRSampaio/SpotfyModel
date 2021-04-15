@@ -10,4 +10,21 @@ public class Pagamento {
         this.dtPagamento = dtPagamento;
         ValorPago = valorPago;
     }
+
+
+    public Calendar getDtPagamento() {
+        return dtPagamento;
+    }
+
+    public void setDtPagamento(Calendar dtPagamento) {
+        this.dtPagamento = dtPagamento;
+    }
+
+    public double getValorPago() {
+        return ValorPago;
+    }
+
+    public void setValorPago(double valorPago) {
+        ValorPago = valorPago;
+    }
 }

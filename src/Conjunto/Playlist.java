@@ -18,4 +18,19 @@ public class Playlist extends Conjunto{
         this.listaMusica.add(musica);
     }
 
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+    }
+
+    public List<Musica> getListaMusica() {
+        return listaMusica;
+    }
+
+    public void setListaMusica(List<Musica> listaMusica) {
+        this.listaMusica = listaMusica;
+    }
 }

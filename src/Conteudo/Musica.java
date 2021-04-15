@@ -28,4 +28,35 @@ public class Musica extends Conteudo{
     }
 
 
+    public Banda getBanda() {
+        return Banda;
+    }
+
+    public void setBanda(Banda banda) {
+        Banda = banda;
+    }
+
+    public Album getAlbum() {
+        return album;
+    }
+
+    public void setAlbum(Album album) {
+        this.album = album;
+    }
+
+    public List<Playlist> getListaPlaylist() {
+        return listaPlaylist;
+    }
+
+    public void setListaPlaylist(List<Playlist> listaPlaylist) {
+        this.listaPlaylist = listaPlaylist;
+    }
+
+    public List<Artista> getListaArtista() {
+        return listaArtista;
+    }
+
+    public void setListaArtista(List<Artista> listaArtista) {
+        this.listaArtista = listaArtista;
+    }
 }

@@ -23,4 +23,27 @@ public class Album extends Conjunto{
     }
 
 
+    public Banda getBanda() {
+        return banda;
+    }
+
+    public void setBanda(Banda banda) {
+        this.banda = banda;
+    }
+
+    public List<Musica> getListaMusica() {
+        return listaMusica;
+    }
+
+    public void setListaMusica(List<Musica> listaMusica) {
+        this.listaMusica = listaMusica;
+    }
+
+    public List<Artista> getListaArtista() {
+        return listaArtista;
+    }
+
+    public void setListaArtista(List<Artista> listaArtista) {
+        this.listaArtista = listaArtista;
+    }
 }

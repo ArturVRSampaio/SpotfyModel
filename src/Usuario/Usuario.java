@@ -20,4 +20,45 @@ public class Usuario {
         this.dtNascimento = dtNascimento;
         this.plano = plano;
     }
+
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public Calendar getDtNascimento() {
+        return dtNascimento;
+    }
+
+    public void setDtNascimento(Calendar dtNascimento) {
+        this.dtNascimento = dtNascimento;
+    }
+
+    public Plano.Plano getPlano() {
+        return plano;
+    }
+
+    public void setPlano(Plano.Plano plano) {
+        this.plano = plano;
+    }
+
+    public List<Avaliacao.Avaliacao> getListaAvaliacao() {
+        return listaAvaliacao;
+    }
+
+    public void setListaAvaliacao(List<Avaliacao.Avaliacao> listaAvaliacao) {
+        this.listaAvaliacao = listaAvaliacao;
+    }
+
+    public List<Playlist> getListaPlaylist() {
+        return listaPlaylist;
+    }
+
+    public void setListaPlaylist(List<Playlist> listaPlaylist) {
+        this.listaPlaylist = listaPlaylist;
+    }
 }

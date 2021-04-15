@@ -13,4 +13,28 @@ public class Conteudo {
         DtCriacao = dtCriacao;
         UrlImagem = urlImagem;
     }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public Calendar getDtCriacao() {
+        return DtCriacao;
+    }
+
+    public void setDtCriacao(Calendar dtCriacao) {
+        DtCriacao = dtCriacao;
+    }
+
+    public String getUrlImagem() {
+        return UrlImagem;
+    }
+
+    public void setUrlImagem(String urlImagem) {
+        UrlImagem = urlImagem;
+    }
 }

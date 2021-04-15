@@ -19,4 +19,36 @@ public class Artista  extends Criador{
         DtNascimento = dtNascimento;
     }
 
+
+    public Calendar getDtNascimento() {
+        return DtNascimento;
+    }
+
+    public void setDtNascimento(Calendar dtNascimento) {
+        DtNascimento = dtNascimento;
+    }
+
+    public Criador.Banda getBanda() {
+        return banda;
+    }
+
+    public void setBanda(Criador.Banda banda) {
+        this.banda = banda;
+    }
+
+    public List<Album> getListaAlbum() {
+        return listaAlbum;
+    }
+
+    public void setListaAlbum(List<Album> listaAlbum) {
+        this.listaAlbum = listaAlbum;
+    }
+
+    public List<Musica> getListaMusica() {
+        return listaMusica;
+    }
+
+    public void setListaMusica(List<Musica> listaMusica) {
+        this.listaMusica = listaMusica;
+    }
 }

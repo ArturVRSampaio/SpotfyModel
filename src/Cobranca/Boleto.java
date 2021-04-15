@@ -17,4 +17,36 @@ public class Boleto extends Cobranca{
         this.valorDocumento = valorDocumento;
     }
 
+
+    public String getNumeroBoleto() {
+        return numeroBoleto;
+    }
+
+    public void setNumeroBoleto(String numeroBoleto) {
+        this.numeroBoleto = numeroBoleto;
+    }
+
+    public String getValidadeBoleto() {
+        return validadeBoleto;
+    }
+
+    public void setValidadeBoleto(String validadeBoleto) {
+        this.validadeBoleto = validadeBoleto;
+    }
+
+    public String getPrazoCairBoleto() {
+        return prazoCairBoleto;
+    }
+
+    public void setPrazoCairBoleto(String prazoCairBoleto) {
+        this.prazoCairBoleto = prazoCairBoleto;
+    }
+
+    public String getValorDocumento() {
+        return valorDocumento;
+    }
+
+    public void setValorDocumento(String valorDocumento) {
+        this.valorDocumento = valorDocumento;
+    }
 }

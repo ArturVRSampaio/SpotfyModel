@@ -19,4 +19,28 @@ public class Banda  extends Criador{
         DtCriacao = dtCriacao;
     }
 
+
+    public Calendar getDtCriacao() {
+        return DtCriacao;
+    }
+
+    public void setDtCriacao(Calendar dtCriacao) {
+        DtCriacao = dtCriacao;
+    }
+
+    public List<Criador.Artista> getListaArtista() {
+        return listaArtista;
+    }
+
+    public void setListaArtista(List<Criador.Artista> listaArtista) {
+        this.listaArtista = listaArtista;
+    }
+
+    public List<Album> getListaAlbum() {
+        return listaAlbum;
+    }
+
+    public void setListaAlbum(List<Album> listaAlbum) {
+        this.listaAlbum = listaAlbum;
+    }
 }
