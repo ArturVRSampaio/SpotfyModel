@@ -8,4 +8,10 @@ public class Plano{
     private double valorPlano;
     private int diaVencimento;
 
+
+    public Plano(String nomePlano, double valorPlano, int diaVencimento) {
+        this.nomePlano = nomePlano;
+        this.valorPlano = valorPlano;
+        this.diaVencimento = diaVencimento;
+    }
 }

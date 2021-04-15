@@ -12,7 +12,6 @@ public class Criador {
 
 
 
-    /////////////// Constructor //////////////////
     public Criador(String nome, String urlImagem) {
         this.nome = nome;
         UrlImagem = urlImagem;

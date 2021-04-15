@@ -1,5 +1,6 @@
 package Conjunto;
 
+import Conteudo.Conteudo;
 import Conteudo.Musica;
 import Usuario.Usuario;
 import java.util.List;
@@ -9,9 +10,8 @@ public class Playlist extends Conjunto{
     private Usuario usuario;
     private List<Musica> listaMusica;
 
-    /////////////// Constructor //////////////////
-    public Playlist(String nome, String descricao, String urlConjunto, String urlImagem, String listaDeConteudo, Usuario usuario) {
-        super(nome, descricao, urlImagem, listaDeConteudo);
+    public Playlist(String nome, String descricao, String urlImagem, Usuario usuario) {
+        super(nome, descricao, urlImagem);
         this.usuario = usuario;
     }
 

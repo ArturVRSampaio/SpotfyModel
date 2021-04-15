@@ -15,10 +15,9 @@ public class Usuario {
     private List<Playlist> listaPlaylist;
 
 
-
-    public Usuario(String nome, Calendar dtNascimento){
+    public Usuario(String nome, Calendar dtNascimento, Plano plano) {
         this.nome = nome;
         this.dtNascimento = dtNascimento;
+        this.plano = plano;
     }
-
 }

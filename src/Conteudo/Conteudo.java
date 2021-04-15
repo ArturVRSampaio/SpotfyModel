@@ -1,17 +1,16 @@
 package Conteudo;
 
+import java.util.Calendar;
+
 public class Conteudo {
     private String nome;
-    private String DtCriacao;
-    private String UrlConteudo;
+    private Calendar DtCriacao;
     private String UrlImagem;
 
 
-
-    public Conteudo(String nome, String dtCriacao, String urlConteudo, String urlImagem) {
+    public Conteudo(String nome, Calendar dtCriacao, String urlImagem) {
         this.nome = nome;
         DtCriacao = dtCriacao;
-        UrlConteudo = urlConteudo;
         UrlImagem = urlImagem;
     }
 }

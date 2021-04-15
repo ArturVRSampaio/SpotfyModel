@@ -1,5 +1,6 @@
 package Cobranca;
 
+import Pagamento.Pagamento;
 import Usuario.UsuarioPremium;
 
 public class Cobranca {

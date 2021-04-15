@@ -5,6 +5,7 @@ import Conjunto.Playlist;
 import Criador.Artista;
 import Criador.Banda;
 
+import java.util.Calendar;
 import java.util.List;
 
 public class Musica extends Conteudo{
@@ -13,13 +14,18 @@ public class Musica extends Conteudo{
     private List<Playlist> listaPlaylist;
     private List<Artista> listaArtista;
 
-    public Musica(String nome, String dtCriacao, String urlConteudo,
-                  String urlImagem, Criador.Banda banda, Album album,
-                  List<Playlist> listaPlaylist, List<Artista> listaArtista) {
-        super(nome, dtCriacao, urlConteudo, urlImagem);
+    public Musica(String nome, Calendar dtCriacao, String urlImagem, Criador.Banda banda, Album album, List<Artista> listaArtista) {
+        super(nome, dtCriacao, urlImagem);
         Banda = banda;
         this.album = album;
-        this.listaPlaylist = listaPlaylist;
         this.listaArtista = listaArtista;
     }
+
+    public Musica(String nome, Calendar dtCriacao, String urlImagem, Album album, List<Artista> listaArtista) {
+        super(nome, dtCriacao, urlImagem);
+        this.album = album;
+        this.listaArtista = listaArtista;
+    }
+
+
 }

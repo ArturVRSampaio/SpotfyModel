@@ -1,6 +1,6 @@
 package Conjunto;
 
-import Conteudo.Musica;
+import Conteudo.Conteudo;
 import Conteudo.Podcast;
 import Criador.PodCaster;
 
@@ -11,8 +11,8 @@ public class Temporada extends Conjunto{
     private List<Podcast> listaPodcast;
 
 
-    public Temporada(String nome, String descricao, String urlConjunto, String urlImagem, String listaDeConteudo, PodCaster podCaster) {
-        super(nome, descricao, urlImagem, listaDeConteudo);
+    public Temporada(String nome, String descricao, String urlImagem, PodCaster podCaster) {
+        super(nome, descricao, urlImagem);
         this.podCaster = podCaster;
     }
 
