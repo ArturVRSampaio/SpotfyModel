@@ -9,14 +9,13 @@ public class Boleto extends Cobranca{
     private String valorDocumento;
 
 
-    public Boleto(double valor, Usuario usuario, String numeroBoleto, String validadeBoleto, String prazoCairBoleto, String valorDocumento) {
-        super(valor, usuario);
+    public Boleto(Usuario usuario, int diaVencimento, String numeroBoleto, String validadeBoleto, String prazoCairBoleto, String valorDocumento) {
+        super(usuario, diaVencimento);
         this.numeroBoleto = numeroBoleto;
         this.validadeBoleto = validadeBoleto;
         this.prazoCairBoleto = prazoCairBoleto;
         this.valorDocumento = valorDocumento;
     }
-
 
     public String getNumeroBoleto() {
         return numeroBoleto;

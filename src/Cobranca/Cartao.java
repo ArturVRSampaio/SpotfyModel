@@ -10,15 +10,14 @@ public class Cartao extends Cobranca{
     private String validade;
 
 
-    public Cartao(double valor, Usuario usuario, String numeroCartao, String cvv, String numero, String nome, String validade) {
-        super(valor, usuario);
+    public Cartao(Usuario usuario, int diaVencimento, String numeroCartao, String cvv, String numero, String nome, String validade) {
+        super(usuario, diaVencimento);
         this.numeroCartao = numeroCartao;
         this.cvv = cvv;
         this.numero = numero;
         this.nome = nome;
         this.validade = validade;
     }
-
 
     public String getNumeroCartao() {
         return numeroCartao;
