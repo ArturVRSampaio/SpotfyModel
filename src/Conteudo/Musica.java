@@ -35,6 +35,9 @@ public class Musica extends Conteudo{
 
     public Avaliacao avalia(Usuario usuario, boolean gostou) {
         Avaliacao avaliacao = new AvaliacaoMusica(usuario, gostou, this);
+        if(gostou){
+            usuario.addListaMusicasGostei(this);
+            }
         return avaliacao;
     }
 
