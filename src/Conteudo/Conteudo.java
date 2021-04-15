@@ -1,9 +1,9 @@
 package Conteudo;
 
+import Avaliacao.Avaliacao;
+
 import java.util.Calendar;
 import java.util.List;
-
-import Avaliacao.Avaliacao;
 
 public abstract class Conteudo {
     private String nome;
@@ -19,7 +19,9 @@ public abstract class Conteudo {
         UrlImagem = urlImagem;
     }
 
-    public abstract void exibir();
+    public void exibir(Conteudo conteudo) {
+        totalView+=1;
+    }
 
     public String getNome() {
         return nome;

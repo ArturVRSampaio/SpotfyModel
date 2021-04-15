@@ -28,10 +28,6 @@ public class Musica extends Conteudo{
     }
 
 
-    public void exibir() {
-        this.addTotalView();
-    }
-
     public Banda getBanda() {
         return Banda;
     }
