@@ -15,7 +15,7 @@ public class AvaliacaoUsuario extends Avaliacao{
         return usuarioAvaliado;
     }
 
-    public void setUsuarioAvaliado(Usuario usuario) {
+    public void setUsuarioAvaliado(Usuario usuarioAvaliado) {
         this.usuarioAvaliado = usuarioAvaliado;
     }
 }
