@@ -1,6 +1,7 @@
 package Criador;
 
 import Avaliacao.Avaliacao;
+import Usuario.Usuario;
 
 import java.util.List;
 
@@ -17,6 +18,9 @@ public abstract class Criador {
         UrlImagem = urlImagem;
     }
 
+
+
+    public abstract Avaliacao avalia(Usuario usuario, boolean gostou);
 
     public String getNome() {
         return nome;
