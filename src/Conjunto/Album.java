@@ -1,6 +1,5 @@
 package Conjunto;
 
-import Conteudo.Conteudo;
 import Conteudo.Musica;
 import Criador.Artista;
 import Criador.Banda;

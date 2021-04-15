@@ -25,6 +25,8 @@ package Main;
 
     import Avaliacao.Avaliacao;
 
+    import Pagamento.Pagamento;
+
 
 public class Main {
     public static void main (String[] args) {

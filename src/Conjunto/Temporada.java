@@ -1,6 +1,5 @@
 package Conjunto;
 
-import Conteudo.Conteudo;
 import Conteudo.Podcast;
 import Criador.PodCaster;
 

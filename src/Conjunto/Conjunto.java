@@ -1,7 +1,6 @@
 package Conjunto;
 
 import Avaliacao.Avaliacao;
-import Conteudo.Conteudo;
 
 import java.util.List;
 
