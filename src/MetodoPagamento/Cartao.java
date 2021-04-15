@@ -11,7 +11,6 @@ public class Cartao extends MetodoPagamento{
 
 
     public Cartao(Usuario usuario, int diaVencimento, String numeroCartao, String cvv, String numero, String nome, String validade) {
-        super(usuario, diaVencimento);
         this.numeroCartao = numeroCartao;
         this.cvv = cvv;
         this.numero = numero;

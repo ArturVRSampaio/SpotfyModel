@@ -10,7 +10,6 @@ public class Boleto extends MetodoPagamento{
 
 
     public Boleto(Usuario usuario, int diaVencimento, String numeroBoleto, String validadeBoleto, String prazoCairBoleto, String valorDocumento) {
-        super(usuario, diaVencimento);
         this.numeroBoleto = numeroBoleto;
         this.validadeBoleto = validadeBoleto;
         this.prazoCairBoleto = prazoCairBoleto;
