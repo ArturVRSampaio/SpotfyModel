@@ -2,6 +2,7 @@ package Usuario;
 
 import Avaliacao.Avaliacao;
 import Conjunto.Playlist;
+import Conteudo.Conteudo;
 import Plano.Plano;
 
 import java.util.Calendar;
@@ -19,6 +20,11 @@ public class Usuario {
         this.nome = nome;
         this.dtNascimento = dtNascimento;
         this.plano = plano;
+    }
+
+
+    public void avalia(boolean gostou, Conteudo conteudo){
+        conteudo.avalia(this, gostou);
     }
 
 

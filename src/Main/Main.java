@@ -1,11 +1,16 @@
 package Main;
     import Cobranca.Cobranca;
 import Conjunto.Album;
+import Conjunto.Conjunto;
 import Conjunto.Playlist;
+import Conjunto.Temporada;
 import Conteudo.Conteudo;
 import Conteudo.Musica;
+import Conteudo.Podcast;
 import Criador.Artista;
 import Criador.Banda;
+import Criador.Criador;
+import Criador.PodCaster;
 import Pagamento.Pagamento;
 import Plano.Plano;
 import Usuario.Usuario;
@@ -50,11 +55,23 @@ public class Main {
 
         Playlist playlistRock = new Playlist("minhas favoritas", "Definitivamente escute", "escutandoMusicaBoa.jpg", user1); 
 
-        //avaliando
-        //AvaliacaoMusica avMus = new AvaliacaoMusica(user1, true, musica1);
         
+        //podcast
+
+        PodCaster PodCaster1 = new PodCaster("null", "null", Calendar.getInstance());
+
+        Temporada primeiraTemp = new Temporada("nome", "descricao", "urlImagem", PodCaster1);
+        
+        List<Temporada> tempoaradaPodcast = new ArrayList<Temporada>();
+        tempoaradaPodcast.add(primeiraTemp);
+        
+        Conteudo podcast1= new Podcast("nome", Calendar.getInstance(), "urlImagem.jpg",PodCaster1, listaTemporada, descricao) 
+
+        
+        //avaliando
         ironMan.exibe();
-        ironMan.avalia(user1, true);
+        user1.avalia(true, ironMan);
+        user1.avalia(true, podcast1);
         
 
         
