@@ -1,6 +1,6 @@
 package Avaliacao;
 
-import Conteudo.Podcast;
+import Conteudo.Midia.Podcast;
 import Usuario.Usuario;
 
 public class AvaliacaoPodcast extends Avaliacao{

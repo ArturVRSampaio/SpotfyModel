@@ -1,6 +1,6 @@
 package Avaliacao;
 
-import Conteudo.Musica;
+import Conteudo.Midia.Musica;
 import Usuario.Usuario;
 
 public class AvaliacaoMusica extends Avaliacao{

@@ -1,6 +1,6 @@
 package Avaliacao;
 
-import Conjunto.Album;
+import Conteudo.Conjunto.Album;
 import Usuario.Usuario;
 
 public class AvaliacaoAlbum extends Avaliacao{

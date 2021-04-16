@@ -1,6 +1,6 @@
 package Avaliacao;
 
-import Criador.PodCaster;
+import Conteudo.Criador.PodCaster;
 import Usuario.Usuario;
 
 public class AvaliacaoCaster extends Avaliacao{

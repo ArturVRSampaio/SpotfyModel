@@ -1,6 +1,6 @@
 package Avaliacao;
 
-import Criador.Banda;
+import Conteudo.Criador.Banda;
 import Usuario.Usuario;
 
 public class AvaliacaoBanda extends Avaliacao{

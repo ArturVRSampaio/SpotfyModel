@@ -5,7 +5,7 @@ import Conjunto.Conjunto;
 import Conjunto.Playlist;
 import Conteudo.Conteudo;
 import Conteudo.Musica;
-import Criador.Criador;
+import Conteudo.Criador.Criador;
 import Plano.Plano;
 
 import java.util.Calendar;
