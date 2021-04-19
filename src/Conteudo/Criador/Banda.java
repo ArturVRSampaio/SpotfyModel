@@ -1,9 +1,8 @@
 package Conteudo.Criador;
 
 import Conteudo.Conjunto.Album;
-import Conteudo.Criador.Artista;
-import Conteudo.Criador.Criador;
 
+import java.util.Calendar;
 import java.util.List;
 
 public class Banda  extends Criador {
@@ -11,5 +10,7 @@ public class Banda  extends Criador {
     private List<Artista> listaArtista;
     private List<Album> listaAlbum;
 
-
+    public Banda(Calendar dtCriacao, String nome, String urlPagina, String urlImagem) {
+        super(dtCriacao, nome, urlPagina, urlImagem);
+    }
 }
