@@ -5,6 +5,7 @@ import Avaliacao.Avaliacao;
 import Conteudo.Criador.Artista;
 import Conteudo.Criador.Banda;
 import Conteudo.Midia.Musica;
+import Exceptions.jaAvaliadoException;
 import Interface.Avaliavel;
 import Interface.Buscavel;
 
@@ -53,7 +54,13 @@ public class Album extends Conjunto implements Avaliavel, Buscavel {
         this.listaMusica = listaMusica;
     }
 
-    public void addAvaliacao(Avaliacao avaliacao) {
+    public void addAvaliacao(Avaliacao avaliacao) throws Exception{
+
+        for (int i = 0; i < this.listaAvaliacao.size(); i++) {
+            if (this.listaAvaliacao.get(i).getUsuario() == avaliacao.getUsuario()) {
+                throw new jaAvaliadoException();
+            }
+        }
         this.listaAvaliacao.add(avaliacao);
     }
 

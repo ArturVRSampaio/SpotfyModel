@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface Avaliavel {
 
-    public void addAvaliacao(Avaliacao avaliacao);
+    public void addAvaliacao(Avaliacao avaliacao) throws Exception;
 
     public List<Avaliacao> getListaAvaliacao();
 
