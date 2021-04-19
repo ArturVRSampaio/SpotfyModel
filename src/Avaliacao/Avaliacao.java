@@ -1,15 +1,24 @@
 package Avaliacao;
 
+import Interface.Avaliavel;
 import Usuario.Usuario;
 
-public abstract class Avaliacao {
+public class Avaliacao {
     private Usuario usuario;
     private boolean avaliacao;
-
+    private Avaliavel avaliavel;
 
     public Avaliacao(Usuario usuario, boolean avaliacao) {
         this.usuario = usuario;
         this.avaliacao= avaliacao;
+    }
+
+    public Avaliavel getAvaliavel() {
+        return avaliavel;
+    }
+
+    public void setAvaliavel(Avaliavel avaliavel) {
+        this.avaliavel = avaliavel;
     }
 
     public Usuario getUsuario() {
