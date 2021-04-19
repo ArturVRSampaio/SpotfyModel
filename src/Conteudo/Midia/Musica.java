@@ -8,6 +8,7 @@ import Conteudo.Criador.Banda;
 import Interface.Avaliavel;
 import Interface.Buscavel;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
@@ -24,6 +25,10 @@ public class Musica extends Midia implements Avaliavel, Buscavel {
 
     public Musica(Calendar dtCriacao, String nome, Calendar dtLancamento, String duracao, Banda banda, Album album) {
         super(dtCriacao, nome, dtLancamento, duracao);
+        
+        this.listaPlaylist= new ArrayList<>();
+        this.listaAvaliacao= new ArrayList<>();
+
         this.banda = banda;
         this.album = album;
     }

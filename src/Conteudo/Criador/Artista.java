@@ -4,6 +4,7 @@ import Conteudo.Conjunto.Album;
 import Interface.Buscavel;
 import Interface.Seguivel;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
@@ -20,6 +21,8 @@ public class Artista  extends Criador implements Buscavel, Seguivel {
         this.urlPagina = urlPagina;
         this.urlImagem = urlImagem;
         this.descricao = descricao;
+
+        this.listaAlbum= new ArrayList<>();
     }
 
     public Banda getBanda() {

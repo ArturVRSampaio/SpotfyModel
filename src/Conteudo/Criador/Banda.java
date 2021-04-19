@@ -4,6 +4,7 @@ import Conteudo.Conjunto.Album;
 import Interface.Buscavel;
 import Interface.Seguivel;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
@@ -18,6 +19,10 @@ public class Banda extends Criador implements Buscavel, Seguivel {
 
     public Banda(Calendar dtCriacao, String nome, String urlPagina, String urlImagem, String descricao) {
         super(dtCriacao, nome);
+
+        this.listaArtista= new ArrayList<>();
+        this.listaAlbum= new ArrayList<>();
+
         this.urlPagina = urlPagina;
         this.urlImagem = urlImagem;
         this.descricao = descricao;

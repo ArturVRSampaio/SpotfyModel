@@ -6,6 +6,7 @@ import Conteudo.Criador.PodCaster;
 import Interface.Avaliavel;
 import Interface.Buscavel;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
@@ -20,6 +21,9 @@ public class Podcast extends Midia implements Avaliavel, Buscavel {
 
     public Podcast(Calendar dtCriacao, String nome, Calendar dtLancamento, String duracao, PodCaster podCaster) {
         super(dtCriacao, nome, dtLancamento, duracao);
+
+        this.listaAvaliacao= new ArrayList<>();
+
         this.podCaster = podCaster;
     }
 

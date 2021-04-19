@@ -8,6 +8,7 @@ import Conteudo.Midia.Musica;
 import Interface.Avaliavel;
 import Interface.Buscavel;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
@@ -26,8 +27,13 @@ public class Album extends Conjunto implements Avaliavel, Buscavel {
 
     public Album(Calendar dtCriacao, String nome, Banda banda, List<Artista> listaArtista) {
         super(dtCriacao, nome);
+        this.listaArtista= new ArrayList<>();
+        this.listaMusica= new ArrayList<>();
+        this.listaAvaliacao= new ArrayList<>();
+
         this.banda = banda;
         this.listaArtista = listaArtista;
+
     }
 
     public Album(Calendar dtCriacao, String nome, List<Artista> listaArtista) {

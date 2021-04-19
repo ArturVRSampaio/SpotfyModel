@@ -4,6 +4,7 @@ import Conteudo.Midia.Podcast;
 import Interface.Buscavel;
 import Interface.Seguivel;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
@@ -16,6 +17,8 @@ public class PodCaster extends Criador implements Buscavel, Seguivel {
 
     public PodCaster(Calendar dtCriacao, String nome, String urlPagina, String urlImagem, String descricao) {
         super(dtCriacao, nome);
+        this.listaPodcast= new ArrayList<>();
+
         this.urlPagina = urlPagina;
         this.urlImagem = urlImagem;
         this.descricao = descricao;
