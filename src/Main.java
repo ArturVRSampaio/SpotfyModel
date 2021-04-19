@@ -1,7 +1,6 @@
 import Cobranca.Cobranca;
 import Conteudo.Conjunto.Album;
 import Conteudo.Conjunto.Playlist;
-import Conteudo.Conjunto.Temporada;
 import Conteudo.Conteudo;
 import Conteudo.Criador.Banda;
 import Conteudo.Criador.PodCaster;
