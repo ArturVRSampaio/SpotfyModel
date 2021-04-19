@@ -34,4 +34,9 @@ public abstract class Conteudo{
     public void setNome(String nome) {
         this.nome = nome;
     }
+
+    public int getVezesEscutado(){
+        return this.vezesEscutado;
+    }
+
 }

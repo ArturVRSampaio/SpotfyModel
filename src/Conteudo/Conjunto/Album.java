@@ -1,6 +1,7 @@
 package Conteudo.Conjunto;
 
 
+import Avaliacao.Avaliacao;
 import Conteudo.Criador.Artista;
 import Conteudo.Criador.Banda;
 import Conteudo.Midia.Musica;
@@ -15,16 +16,86 @@ public class Album extends Conjunto implements Avaliavel, Buscavel {
     private List<Musica> listaMusica;
     private List<Artista> listaArtista;
 
-    public Album(Calendar dtCriacao, String nome, Banda banda, List<Musica> listaMusica, List<Artista> listaArtista) {
+    private List<Avaliacao> listaAvaliacao;
+
+    private String urlPagina;
+    private String urlImagem;
+    private String descricao;
+
+
+
+    public Album(Calendar dtCriacao, String nome, Banda banda, List<Artista> listaArtista) {
         super(dtCriacao, nome);
         this.banda = banda;
-        this.listaMusica = listaMusica;
         this.listaArtista = listaArtista;
     }
 
-    public Album(Calendar dtCriacao, String nome, List<Musica> listaMusica, List<Artista> listaArtista) {
+    public Album(Calendar dtCriacao, String nome, List<Artista> listaArtista) {
         super(dtCriacao, nome);
-        this.listaMusica = listaMusica;
         this.listaArtista = listaArtista;
+    }
+
+    public List<Musica> getListaMusica() {
+        return listaMusica;
+    }
+
+    public void addMusica(Musica musica) {
+        this.listaMusica.add(musica);
+    }
+
+    public void setListaMusica(List<Musica> listaMusica) {
+        this.listaMusica = listaMusica;
+    }
+
+    public void addAvaliacao(Avaliacao avaliacao) {
+        this.listaAvaliacao.add(avaliacao);
+    }
+
+    public List<Avaliacao> getListaAvaliacao() {
+        return this.listaAvaliacao;
+    }
+
+    public Banda getBanda() {
+        return this.banda;
+    }
+
+    public void setBanda(Banda banda) {
+        this.banda = banda;
+    }
+
+    public List<Artista> getListaArtista() {
+        return listaArtista;
+    }
+
+    public void setListaArtista(List<Artista> listaArtista) {
+        this.listaArtista = listaArtista;
+    }
+
+    public void setListaAvaliacao(List<Avaliacao> listaAvaliacao) {
+        this.listaAvaliacao = listaAvaliacao;
+    }
+
+    public String getUrlPagina() {
+        return urlPagina;
+    }
+
+    public void setUrlPagina(String urlPagina) {
+        this.urlPagina = urlPagina;
+    }
+
+    public String geturlImagem() {
+        return urlImagem;
+    }
+
+    public void seturlImagem(String urlImagem) {
+        this.urlImagem = urlImagem;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
 }
