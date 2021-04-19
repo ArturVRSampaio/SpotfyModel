@@ -2,6 +2,7 @@ import Cobranca.Cobranca;
 import Conteudo.Conjunto.Album;
 import Conteudo.Conjunto.Playlist;
 import Conteudo.Conteudo;
+import Conteudo.Criador.Artista;
 import Conteudo.Criador.Banda;
 import Conteudo.Criador.PodCaster;
 import Conteudo.Midia.Midia;
@@ -24,13 +25,13 @@ public class Main {
         Plano planoPrem = new Plano("prem", 60);
 
         // criando usuarios
-        Usuario user1 = new Usuario("usuario1", Calendar.getInstance(), planoFree);
-        Usuario user2 = new Usuario("usuario2", Calendar.getInstance(), planoPrem);
+        Usuario artur = new Usuario("artur", Calendar.getInstance(), planoFree);
+        Usuario aikau = new Usuario("aikau", Calendar.getInstance(), planoPrem);
 
 
         //cobrando plano de usuarios 
-        Cobranca cobranca1 = new Cobranca(user1, 12);
-        Cobranca cobranca2 = new Cobranca(user2, 12); 
+        Cobranca cobranca1 = new Cobranca(artur, 12);
+        Cobranca cobranca2 = new Cobranca(aikau, 12);
 
         //pagando cobrancas
         Pagamento pag1 = new Pagamento(cobranca1, Calendar.getInstance(), 0);
@@ -39,52 +40,39 @@ public class Main {
 
 
 
-
-
         //CONTEUDO
 
         //criadores
-        Artista ozzy = new Artista("ozzy", "ozzy.com", Calendar.getInstance());
-        Artista iommy = new Artista("iommy", "iommy.com", Calendar.getInstance());
+        Artista ozzy = new Artista(Calendar.getInstance(), "ozzy", "ozzy.com", "ozzy.jpg", "vocalista sabbath");
+        Artista iommy = new Artista(Calendar.getInstance(), "iommy", "iommy.com", "iommy.jpg", "guitarrista sabbath");
 
         List<Artista> integrantesSabbath = new ArrayList<Artista>();
         integrantesSabbath.add(ozzy);
         integrantesSabbath.add(iommy);
 
-        Banda sabbath = new Banda("blackSabbath", "sabbath.com", Calendar.getInstance());
+        Banda sabbath = new Banda(Calendar.getInstance(), "black sabbath", "sabbath.com", "sabbath.jp", "creators of the metal");
 
-        PodCaster PodCaster1 = new PodCaster("null", "null", Calendar.getInstance());
+        PodCaster dioLinux = new PodCaster(Calendar.getInstance(), "Diolinux", "diolinux.com", "tux.jpg", "podcast sobre linux e jogos");
 
-        //Album, temporada
-        Album paranoid = new Album("paranoid", "", "urlImagem.com", sabbath, integrantesSabbath);
-        Temporada primeiraTemp = new Temporada("nome", "descricao", "urlImagem", PodCaster1);
+        //Album, playlist
+        Album paranoid = new Album(Calendar.getInstance(), "Paranoid", sabbath, integrantesSabbath);
 
+        Playlist playlistRock = new Playlist(Calendar.getInstance(), "PlayRock", artur);
 
         //midia
-        Midia ironMan = new Musica("iron man", Calendar.getInstance(), "ironMan.com", paranoid, integrantesSabbath);
+        Midia warPigs = new Musica(Calendar.getInstance(), "War Pigs", Calendar.getInstance(), "1hora", sabbath, paranoid);
+
+        Conteudo fNvida= new Podcast(Calendar.getInstance(), "F* you Nvidia", Calendar.getInstance(), "1hora", dioLinux)
 
 
 
 
 
-
-
-        Playlist playlistRock = new Playlist("minhas favoritas", "Definitivamente escute", "escutandoMusicaBoa.jpg", user1);
-
-        
-
-
-
-        List<Temporada> tempoaradaPodcast = new ArrayList<Temporada>();
-        tempoaradaPodcast.add(primeiraTemp);
-
-        Conteudo podcast1= new Podcast("nome", Calendar.getInstance(), "urlImagem.jpg",PodCaster1, listaTemporada, descricao)
-
-        
         //avaliando
-        ironMan.exibe();
-        user1.avalia(true, ironMan);
-        user1.avalia(true, podcast1);
+        paranoid.exibe();
+        artur.avalia(true, warPigs);
+        aikau.avalia(false, fNvida);
+
         
 
         
