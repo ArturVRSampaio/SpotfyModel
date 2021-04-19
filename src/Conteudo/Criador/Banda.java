@@ -1,11 +1,12 @@
 package Conteudo.Criador;
 
 import Conteudo.Conjunto.Album;
+import Interface.Buscavel;
 
 import java.util.Calendar;
 import java.util.List;
 
-public class Banda  extends Criador {
+public class Banda  extends Criador, Buscavel {
 
     private List<Artista> listaArtista;
     private List<Album> listaAlbum;

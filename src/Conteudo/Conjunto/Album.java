@@ -5,11 +5,12 @@ import Conteudo.Criador.Artista;
 import Conteudo.Criador.Banda;
 import Conteudo.Midia.Musica;
 import Interface.Avaliavel;
+import Interface.Buscavel;
 
 import java.util.Calendar;
 import java.util.List;
 
-public class Album extends Conjunto implements Avaliavel {
+public class Album extends Conjunto implements Avaliavel, Buscavel {
     private Banda banda;
     private List<Musica> listaMusica;
     private List<Artista> listaArtista;
