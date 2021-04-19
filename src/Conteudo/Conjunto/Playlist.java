@@ -7,6 +7,7 @@ import Interface.Avaliavel;
 import Interface.Buscavel;
 import Usuario.Usuario;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
@@ -21,6 +22,7 @@ public class Playlist extends Conjunto implements Avaliavel, Buscavel {
 
     public Playlist(Calendar dtCriacao, String nome, Usuario usuario) {
         super(dtCriacao, nome);
+        this.listaMusica= new ArrayList<>();
         this.usuario = usuario;
     }
 
@@ -45,14 +47,13 @@ public class Playlist extends Conjunto implements Avaliavel, Buscavel {
     }
 
     public void addMusica(Musica musica) throws Exception {
-
-        // null pointer on this.listaMusica.size()
+        
         for (int i = 0; i < this.listaMusica.size(); i++) {
             if (this.listaMusica.get(i) == musica) {
                 throw new jaListadoException();
             }
         }
-
+        this.listaMusica.add(musica);
     }
 
     public void setListaMusica(List<Musica> listaMusica) {

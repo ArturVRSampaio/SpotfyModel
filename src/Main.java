@@ -67,6 +67,7 @@ public class Main {
         aikau.avalia(false, fNvida);
 
         playlistRock.addMusica(warPigs);
+        playlistRock.addMusica(warPigs);
 
 
     }
