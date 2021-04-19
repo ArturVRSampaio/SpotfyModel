@@ -1,11 +1,12 @@
 package Conteudo.Criador;
 
-import Avaliacao.Avaliacao;
 import Conteudo.Conteudo;
 
-import java.util.List;
+import java.util.Calendar;
 
 public abstract class Criador extends Conteudo{
 
-
+    public Criador(Calendar dtCriacao, String nome, String urlPagina, String urlImagem) {
+        super(dtCriacao, nome, urlPagina, urlImagem);
+    }
 }

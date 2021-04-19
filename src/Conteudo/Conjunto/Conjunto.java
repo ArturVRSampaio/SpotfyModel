@@ -1,11 +1,12 @@
 package Conteudo.Conjunto;
 
-import Avaliacao.Avaliacao;
 import Conteudo.Conteudo;
 
-import java.util.List;
+import java.util.Calendar;
 
 public abstract class Conjunto extends Conteudo{
 
-
+    public Conjunto(Calendar dtCriacao, String nome, String urlPagina, String urlImagem) {
+        super(dtCriacao, nome, urlPagina, urlImagem);
+    }
 }

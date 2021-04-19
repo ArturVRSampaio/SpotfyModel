@@ -1,11 +1,15 @@
 package Conteudo.Midia;
-import Avaliacao.Avaliacao;
 import Conteudo.Conteudo;
 
 import java.util.Calendar;
-import java.util.List;
 
 public abstract class Midia extends Conteudo{
+    private Calendar dtLancamento;
+    private String duracao;
 
-
+    public Midia(Calendar dtCriacao, String nome, String urlPagina, String urlImagem, Calendar dtLancamento, String duracao) {
+        super(dtCriacao, nome, urlPagina, urlImagem);
+        this.dtLancamento = dtLancamento;
+        this.duracao = duracao;
+    }
 }

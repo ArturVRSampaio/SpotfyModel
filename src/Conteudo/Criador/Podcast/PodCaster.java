@@ -1,11 +1,11 @@
 package Conteudo.Criador.Podcast;
 
-import Conjunto.Temporada;
+import Conteudo.Conjunto.Podcast.Temporada;
+import Conteudo.Criador.Criador;
 
-import java.util.Calendar;
 import java.util.List;
 
-public class PodCaster extends Criador{
+public class PodCaster extends Criador {
     private List<Temporada> listaTemporada;
 
 
