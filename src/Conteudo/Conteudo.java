@@ -1,17 +1,15 @@
 package Conteudo;
 
-import Avaliacao.Avaliacao;
+import Interface.Avaliavel;
 
 import java.util.Calendar;
-import java.util.List;
 
-public abstract class Conteudo {
+public abstract class Conteudo implements Avaliavel {
 
     private Calendar dtCriacao;
     private String nome;
     private String urlPagina;
     private String UrlImagem;
-    private List<Avaliacao> listaAvaliacao;
     private int vezesEscutado;
     private String descricao;
 
@@ -26,11 +24,6 @@ public abstract class Conteudo {
     public void exibe(){
         this.vezesEscutado+=1;
     }
-
-    public void addAvaliacao(Avaliacao avaliacao) {
-        this.listaAvaliacao.add(avaliacao);
-    }
-
 
     public Calendar getDtCriacao() {
         return dtCriacao;
@@ -62,14 +55,6 @@ public abstract class Conteudo {
 
     public void setUrlImagem(String urlImagem) {
         UrlImagem = urlImagem;
-    }
-
-    public List<Avaliacao> getListaAvaliacao() {
-        return listaAvaliacao;
-    }
-
-    public void setListaAvaliacao(List<Avaliacao> listaAvaliacao) {
-        this.listaAvaliacao = listaAvaliacao;
     }
 
     public int getVezesEscutado() {
