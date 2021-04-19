@@ -23,7 +23,9 @@ public abstract class Conteudo {
         UrlImagem = urlImagem;
     }
 
-    public abstract void exibe();
+    public void exibe(){
+        this.vezesEscutado+=1;
+    }
 
     public void addAvaliacao(Avaliacao avaliacao) {
         this.listaAvaliacao.add(avaliacao);
