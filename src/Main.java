@@ -56,7 +56,8 @@ public class Main {
         Playlist playlistRock = new Playlist(Calendar.getInstance(), "PlayRock", artur);
 
         //midia
-        Musica warPigs = new Musica(Calendar.getInstance(), "War Pigs", Calendar.getInstance(), "1hora", sabbath, paranoid);
+        Musica warPigs = new Musica(Calendar.getInstance(), "War Pigs", Calendar.getInstance(), "5min", sabbath, paranoid);
+        Musica musicaParanoid = new Musica(Calendar.getInstance(), "paranoid", Calendar.getInstance(), "5min", sabbath, paranoid);
 
         Podcast fNvida= new Podcast(Calendar.getInstance(), "F* you Nvidia", Calendar.getInstance(), "1hora", dioLinux);
 
@@ -67,8 +68,7 @@ public class Main {
         aikau.avalia(false, fNvida);
 
         playlistRock.addMusica(warPigs);
-        playlistRock.addMusica(warPigs);
-
+        playlistRock.addMusica(musicaParanoid);
 
     }
 }
