@@ -1,11 +1,9 @@
 import Cobranca.Cobranca;
 import Conteudo.Conjunto.Album;
 import Conteudo.Conjunto.Playlist;
-import Conteudo.Conteudo;
 import Conteudo.Criador.Artista;
 import Conteudo.Criador.Banda;
 import Conteudo.Criador.PodCaster;
-import Conteudo.Midia.Midia;
 import Conteudo.Midia.Musica;
 import Conteudo.Midia.Podcast;
 import Pagamento.Pagamento;
@@ -38,8 +36,6 @@ public class Main {
         Pagamento pag2 = new Pagamento(cobranca2, Calendar.getInstance(), 0);
 
 
-
-
         //CONTEUDO
 
         //criadores
@@ -60,25 +56,15 @@ public class Main {
         Playlist playlistRock = new Playlist(Calendar.getInstance(), "PlayRock", artur);
 
         //midia
-        Midia warPigs = new Musica(Calendar.getInstance(), "War Pigs", Calendar.getInstance(), "1hora", sabbath, paranoid);
+        Musica warPigs = new Musica(Calendar.getInstance(), "War Pigs", Calendar.getInstance(), "1hora", sabbath, paranoid);
 
-        Conteudo fNvida= new Podcast(Calendar.getInstance(), "F* you Nvidia", Calendar.getInstance(), "1hora", dioLinux)
-
-
-
+        Podcast fNvida= new Podcast(Calendar.getInstance(), "F* you Nvidia", Calendar.getInstance(), "1hora", dioLinux);
 
 
         //avaliando
         paranoid.exibe();
         artur.avalia(true, warPigs);
         aikau.avalia(false, fNvida);
-
-        
-
-        
-        
-
-
 
 
     }

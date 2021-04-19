@@ -1,11 +1,9 @@
 package Usuario;
 
 import Avaliacao.Avaliacao;
-import Conjunto.Conjunto;
-import Conjunto.Playlist;
-import Conteudo.Conteudo;
-import Conteudo.Musica;
-import Conteudo.Criador.Criador;
+import Conteudo.Conjunto.Playlist;
+import Conteudo.Midia.Musica;
+import Interface.Avaliavel;
 import Plano.Plano;
 
 import java.util.Calendar;
@@ -27,21 +25,9 @@ public class Usuario {
     }
 
 
-    public void avalia(boolean gostou, Conteudo conteudo){
-        conteudo.avalia(this, gostou);
+    public void avalia(boolean gostou, Avaliavel avaliavel){
+        Avaliacao avaliacao = new Avaliacao(this, gostou, avaliavel);
     }
-
-    /// terminar de implementar
-    public void avalia(boolean gostou, Conjunto conjunto){
-        conjunto.avalia(this, gostou);
-    }
-
-    public void avalia(boolean gostou, Criador criador){
-        criador.avalia(this, gostou);
-    }
-
-
-
 
 
     public String getNome() {

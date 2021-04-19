@@ -8,9 +8,10 @@ public class Avaliacao {
     private boolean avaliacao;
     private Avaliavel avaliavel;
 
-    public Avaliacao(Usuario usuario, boolean avaliacao) {
+    public Avaliacao(Usuario usuario, boolean avaliacao, Avaliavel avaliavel) {
         this.usuario = usuario;
         this.avaliacao= avaliacao;
+        this.avaliavel = avaliavel;
     }
 
     public Avaliavel getAvaliavel() {
