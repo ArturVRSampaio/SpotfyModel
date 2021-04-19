@@ -1,5 +1,3 @@
-package Main;
-
 import Cobranca.Cobranca;
 import Conteudo.Conjunto.Musica.Album;
 import Conteudo.Conjunto.Musica.Playlist;
