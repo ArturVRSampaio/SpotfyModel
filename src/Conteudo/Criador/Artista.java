@@ -1,7 +1,6 @@
-package Conteudo.Criador.Musica;
+package Conteudo.Criador;
 
-import Conteudo.Conjunto.Musica.Album;
-import Conteudo.Criador.Criador;
+import Conteudo.Conjunto.Album;
 
 import java.util.List;
 

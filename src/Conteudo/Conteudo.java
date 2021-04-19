@@ -1,10 +1,8 @@
 package Conteudo;
 
-import Interface.Avaliavel;
-
 import java.util.Calendar;
 
-public abstract class Conteudo implements Avaliavel {
+public abstract class Conteudo{
 
     private Calendar dtCriacao;
     private String nome;

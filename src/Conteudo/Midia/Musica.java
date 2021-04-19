@@ -1,9 +1,9 @@
 package Conteudo.Midia;
 
 
-import Conteudo.Conjunto.Musica.Album;
-import Conteudo.Conjunto.Musica.Playlist;
-import Conteudo.Criador.Musica.Banda;
+import Conteudo.Conjunto.Album;
+import Conteudo.Conjunto.Playlist;
+import Conteudo.Criador.Banda;
 
 import java.util.Calendar;
 import java.util.List;

@@ -1,6 +1,6 @@
-package Conteudo.Criador.Podcast;
+package Conteudo.Criador;
 
-import Conteudo.Conjunto.Podcast.Temporada;
+import Conteudo.Conjunto.Temporada;
 import Conteudo.Criador.Criador;
 
 import java.util.List;

@@ -1,11 +1,10 @@
 import Cobranca.Cobranca;
-import Conteudo.Conjunto.Musica.Album;
-import Conteudo.Conjunto.Musica.Playlist;
-import Conteudo.Conjunto.Podcast.Temporada;
+import Conteudo.Conjunto.Album;
+import Conteudo.Conjunto.Playlist;
+import Conteudo.Conjunto.Temporada;
 import Conteudo.Conteudo;
-import Conteudo.Criador.Musica.Artista;
-import Conteudo.Criador.Musica.Banda;
-import Conteudo.Criador.Podcast.PodCaster;
+import Conteudo.Criador.Banda;
+import Conteudo.Criador.PodCaster;
 import Conteudo.Midia.Midia;
 import Conteudo.Midia.Musica;
 import Conteudo.Midia.Podcast;

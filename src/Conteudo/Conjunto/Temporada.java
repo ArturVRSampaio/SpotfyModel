@@ -1,7 +1,6 @@
-package Conteudo.Conjunto.Podcast;
+package Conteudo.Conjunto;
 
-import Conteudo.Conjunto.Conjunto;
-import Conteudo.Criador.Podcast.PodCaster;
+import Conteudo.Criador.PodCaster;
 import Conteudo.Midia.Podcast;
 
 import java.util.Calendar;

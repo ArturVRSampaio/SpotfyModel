@@ -1,7 +1,7 @@
 package Conteudo.Midia;
 
 
-import Conteudo.Conjunto.Podcast.Temporada;
+import Conteudo.Conjunto.Temporada;
 
 import java.util.Calendar;
 

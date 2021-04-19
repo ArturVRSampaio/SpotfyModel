@@ -1,6 +1,6 @@
 package Avaliacao;
 
-import Conteudo.Criador.Musica.Artista;
+import Conteudo.Criador.Artista;
 import Usuario.Usuario;
 
 public class AvaliacaoArtista extends Avaliacao{

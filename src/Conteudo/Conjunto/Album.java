@@ -1,9 +1,8 @@
-package Conteudo.Conjunto.Musica;
+package Conteudo.Conjunto;
 
 
-import Conteudo.Conjunto.Conjunto;
-import Conteudo.Criador.Musica.Artista;
-import Conteudo.Criador.Musica.Banda;
+import Conteudo.Criador.Artista;
+import Conteudo.Criador.Banda;
 import Conteudo.Midia.Musica;
 
 import java.util.Calendar;

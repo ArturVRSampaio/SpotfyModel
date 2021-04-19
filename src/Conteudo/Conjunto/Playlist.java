@@ -1,6 +1,5 @@
-package Conteudo.Conjunto.Musica;
+package Conteudo.Conjunto;
 
-import Conteudo.Conjunto.Conjunto;
 import Conteudo.Midia.Musica;
 import Usuario.Usuario;
 
