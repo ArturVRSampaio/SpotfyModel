@@ -16,7 +16,7 @@ import java.util.List;
 
 
 public class Main {
-    public static void main (String[] args) {
+    public static void main (String[] args) throws Exception {
 
         //criando planos
         Plano planoFree = new Plano("free", 0);
@@ -65,6 +65,8 @@ public class Main {
         paranoid.exibe();
         artur.avalia(true, warPigs);
         aikau.avalia(false, fNvida);
+
+        playlistRock.addMusica(warPigs);
 
 
     }
