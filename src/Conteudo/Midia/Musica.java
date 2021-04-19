@@ -14,10 +14,8 @@ public class Musica extends Midia implements Avaliavel {
     private Album album;
     private List<Playlist> listaPlaylist;
 
-
-    public Musica(Calendar dtCriacao, String nome, String urlPagina, String urlImagem, Calendar dtLancamento, String duracao, Banda banda, Album album) {
-
-        super(dtCriacao, nome, urlPagina, urlImagem, dtLancamento, duracao);
+    public Musica(Calendar dtCriacao, String nome, Calendar dtLancamento, String duracao, Banda banda, Album album) {
+        super(dtCriacao, nome, dtLancamento, duracao);
         this.banda = banda;
         this.album = album;
     }

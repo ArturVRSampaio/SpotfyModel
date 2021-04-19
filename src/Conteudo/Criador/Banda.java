@@ -10,7 +10,7 @@ public class Banda  extends Criador {
     private List<Artista> listaArtista;
     private List<Album> listaAlbum;
 
-    public Banda(Calendar dtCriacao, String nome, String urlPagina, String urlImagem) {
-        super(dtCriacao, nome, urlPagina, urlImagem);
+    public Banda(Calendar dtCriacao, String nome) {
+        super(dtCriacao, nome);
     }
 }

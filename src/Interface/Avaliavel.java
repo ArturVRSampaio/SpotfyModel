@@ -8,7 +8,7 @@ public interface Avaliavel {
     List<Avaliacao> listaAvaliacao = null;
 
 
-    void addAvaliacao(Avaliacao avaliacao);
-    List<Avaliacao> getListaAvaliacao();
-    void setListaAvaliacao(List<Avaliacao> listaAvaliacao);
+    public void addAvaliacao(Avaliacao avaliacao);
+    public List<Avaliacao> getListaAvaliacao();
+    public void setListaAvaliacao(List<Avaliacao> listaAvaliacao);
 }

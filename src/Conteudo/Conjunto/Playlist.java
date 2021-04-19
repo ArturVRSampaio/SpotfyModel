@@ -11,9 +11,8 @@ public class Playlist extends Conjunto implements Avaliavel {
     private Usuario usuario;
     private List<Musica> listaMusica;
 
-    public Playlist(Calendar dtCriacao, String nome, String urlPagina, String urlImagem, Usuario usuario, List<Musica> listaMusica) {
-        super(dtCriacao, nome, urlPagina, urlImagem);
+    public Playlist(Calendar dtCriacao, String nome, Usuario usuario) {
+        super(dtCriacao, nome);
         this.usuario = usuario;
-        this.listaMusica = listaMusica;
     }
 }
